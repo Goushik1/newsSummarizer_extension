@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="root">
+      <div class="header">
+        <h1>NewsBite</h1>
+      </div>
+      <div class="contents">
+        <div class="description">
+          <p>Built to summarize news, but works for any content or article!</p>
+        </div>
+        <div id="news" class="news">
+          <strong id="title">t</strong>
+          <p id="content">p</p>
+        </div>
+      </div>
+      <div class="loading-indicator">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div id="footer" class="click">
+        <strong> Click the button below to summarize the news. </strong>
+        <button id="summarize" type="button">Summarize</button>
+        <script src="popup.js"></script>
+      </div>
+    </div>
+  </body>
+</html>

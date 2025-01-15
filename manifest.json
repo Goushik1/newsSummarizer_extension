@@ -1,0 +1,21 @@
+{
+    "name":"NewsBite",
+    "description":"It turns news articles into brief, easy-to-read summaries with the key points.",
+    "version":"1.0",
+    "manifest_version":3,
+    "action":{
+        "default_popup":"popup.html",
+        "default_icon":"NEWS.png"
+    },
+    "content_scripts":[
+        {
+            "matches":["<all_urls>"],
+            "js":["content-script.js"]
+        }
+    ],
+    "permissions":[
+        "activeTab",
+        "tabs",
+        "scripting"
+    ]
+}
